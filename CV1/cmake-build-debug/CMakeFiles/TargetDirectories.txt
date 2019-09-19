@@ -1,0 +1,3 @@
+C:/Users/LK/Desktop/UdSP/UdSP/CV1/cmake-build-debug/CMakeFiles/CV1.dir
+C:/Users/LK/Desktop/UdSP/UdSP/CV1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LK/Desktop/UdSP/UdSP/CV1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
