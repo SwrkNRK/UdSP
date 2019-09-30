@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="CV1" targetName="CV1" />
+      <config projectName="CV2" targetName="CV2" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b745d39e-7a6f-4d2f-9ea2-e4d96f88d4e7" name="Default Changelist" comment="" />
+    <list default="true" id="a671f08c-20bc-4e50-870d-118debed23b8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,20 +24,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="ProjectId" id="1R4Ldtvs3tlnPjdpEtOdu92okoW" />
+  <component name="ProjectId" id="1R6OtahaTkPuOsnAQnyTGBHCgrL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.gitattributes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\LK\Desktop\UdSP\UdSP\CV1" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,7 +46,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="CV1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CV1" TARGET_NAME="CV1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CV1" RUN_TARGET_NAME="CV1">
+    <configuration name="CV2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CV2" TARGET_NAME="CV2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CV2" RUN_TARGET_NAME="CV2">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -63,14 +57,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b745d39e-7a6f-4d2f-9ea2-e4d96f88d4e7" name="Default Changelist" comment="" />
-      <created>1568921511753</created>
+      <changelist id="a671f08c-20bc-4e50-870d-118debed23b8" name="Default Changelist" comment="" />
+      <created>1568984294543</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568921511753</updated>
-      <workItem from="1568921514466" duration="6536000" />
-      <workItem from="1568964336245" duration="13832000" />
-      <workItem from="1568984234934" duration="60000" />
+      <updated>1568984294543</updated>
+      <workItem from="1568984295786" duration="8994000" />
+      <workItem from="1569057882703" duration="17128000" />
+      <workItem from="1569137480390" duration="134000" />
+      <workItem from="1569856209566" duration="3220000" />
     </task>
     <servers />
   </component>

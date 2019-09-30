@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/LK/Desktop/UdSP/UdSP/CV1/Geofunc.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+math.h
+-
+
+C:/Users/LK/Desktop/UdSP/UdSP/CV1/main.c
+stdio.h
+-
+stdlib.h
+-
+Geofunc.h
+C:/Users/LK/Desktop/UdSP/UdSP/CV1/Geofunc.h
+utwo.h
+C:/Users/LK/Desktop/UdSP/UdSP/CV1/utwo.h
+
+C:/Users/LK/Desktop/UdSP/UdSP/CV1/utwo.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+

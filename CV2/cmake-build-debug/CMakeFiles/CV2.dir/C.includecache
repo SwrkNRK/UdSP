@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV2/Dates.h
+stdio.h
+-
+stdbool.h
+-
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV2/functions.h
+stdio.h
+-
+math.h
+-
+stdbool.h
+-
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV2/hodina2.h
+stdio.h
+-
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV2/main.c
+stdio.h
+-
+functions.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV2/functions.h
+Dates.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV2/Dates.h
+hodina2.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV2/hodina2.h
+

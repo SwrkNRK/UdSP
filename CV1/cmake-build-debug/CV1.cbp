@@ -84,7 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/LK/Desktop/UdSP/UdSP/CV1/Geofunc.h">
+			<Option target="CV1"/>
+		</Unit>
 		<Unit filename="C:/Users/LK/Desktop/UdSP/UdSP/CV1/main.c">
+			<Option target="CV1"/>
+		</Unit>
+		<Unit filename="C:/Users/LK/Desktop/UdSP/UdSP/CV1/utwo.h">
 			<Option target="CV1"/>
 		</Unit>
 		<Unit filename="C:/Users/LK/Desktop/UdSP/UdSP/CV1/CMakeLists.txt">

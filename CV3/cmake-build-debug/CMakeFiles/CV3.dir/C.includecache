@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV3/fieldsF.h
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+math.h
+-
+complex.h
+-
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV3/main.c
+stdio.h
+-
+fieldsF.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV3/fieldsF.h
+prog.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV3/prog.h
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV3/prog.h
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+complex.h
+-
+
