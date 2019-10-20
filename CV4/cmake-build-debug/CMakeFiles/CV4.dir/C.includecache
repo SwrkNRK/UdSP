@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV4/DU.h
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+string.h
+-
+stdbool.h
+-
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV4/main.c
+stdio.h
+-
+DU.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV4/DU.h
+
