@@ -68,6 +68,7 @@ int posOfPattern(char* src, char* pattern){
         } else { size = strlen(pattern); pattern=first;}
         src++;pos++;
     }
+    if(size == 0) { return pos-s;}
     return -1;
 }
 
@@ -85,9 +86,48 @@ char* substitute(char* src, char* pattern, char* sub){
 }
 
 _Bool isPalindrome(char* str) {
+    char* left=str;
+    char* right=str+strlen(str)-1;
 
-
+    while (*left != '\0'){
+        if ( *left != *right ) { return false;}
+        left++;
+        right--;
+    }
+    return true;
 }
+
+char* reverse(char* str){
+    char* left=str;
+    char* right=str+strlen(str) -1;
+
+    while (left != right){
+        char tmp= *left;
+        *left=*right;
+        *right=tmp;
+
+        left++;
+        right--;
+    }
+    return str;
+}
+char* toLowerStr(char* str){
+    char* f = str;
+    while (*f != '\0'){
+        *f = tolower(*f); f++;
+    }
+    return str;
+}
+
+char* toUpperStr(char* str){
+    char* f = str;
+    while (*f != '\0'){
+        *f = toupper(*f); f++;
+    }
+
+    return str;
+}
+
 
 
 #endif //CV4_DU_H
