@@ -72,7 +72,7 @@ void sucet(char* strA, char* strB){
         *strA = n+'0';
     }
 
-printf("%s",strA);
+printf("Vysledok po scitani: %s\n",strA);
 }
 
 void odpocet(char* strA, char* strB){
@@ -106,17 +106,14 @@ void odpocet(char* strA, char* strB){
         sA -= sB;
         *(strA)=sA+'0';
     }
-        printf("%s\n",strA);
+        printf("Vysledok po odpocte: %s\n",strA);
 }
 
 
 void nasobenie(char* strA, char* strB) {
     int Alen = strlen(strA)-1;
     int Blen = strlen(strB)-1;
-    /*
-    if(Alen > Blen) {correctStr(strB, Alen-Blen, '0');}
-    else if (Blen > Alen){correctStr(strA, Blen-Alen, '0');}
-     */
+
     int sA;
     int sB = 0;
     int n = 0;
@@ -162,6 +159,20 @@ void nasobenie(char* strA, char* strB) {
 
 void delenie(char* strA, char* strB){
 
+    char tmp[100]="1";
+    char c = "546";
+
+    while(c != '-'){
+        odpocet(strA,strB);
+        c=*strA;
+        sucet(tmp,"1");
+    }
+    char t[2]="2";
+    odpocet(tmp,t);
+
+
+    strcpy(strA,tmp);
+    printf("Vysledok po deleni: %s\n",strA);
 }
 
 
