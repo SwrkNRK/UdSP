@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="CV4" targetName="CV4" />
+      <config projectName="CV5" targetName="CV5" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f24331-bb62-4147-8048-4c629ca64458" name="Default Changelist" comment="" />
+    <list default="true" id="3f132ecb-00a9-433b-aa58-d8fcb3d08d88" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +25,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1SCRg4x2IH5nEPEQkwNYdzulH9I" />
+  <component name="ProjectId" id="1SptoeqvFedZ1JwyE4apkwZbgmc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LK\Desktop\UdSP\UdSP\CV5" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,7 +50,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="CV4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CV4" TARGET_NAME="CV4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CV4" RUN_TARGET_NAME="CV4">
+    <configuration name="CV5" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CV5" TARGET_NAME="CV5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CV5" RUN_TARGET_NAME="CV5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -56,16 +61,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f9f24331-bb62-4147-8048-4c629ca64458" name="Default Changelist" comment="" />
-      <created>1571065698564</created>
+      <changelist id="3f132ecb-00a9-433b-aa58-d8fcb3d08d88" name="Default Changelist" comment="" />
+      <created>1572272540523</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571065698564</updated>
-      <workItem from="1571065701461" duration="633000" />
-      <workItem from="1571508318593" duration="6270000" />
-      <workItem from="1571568927085" duration="6715000" />
-      <workItem from="1571595728125" duration="2307000" />
-      <workItem from="1571683183997" duration="30000" />
+      <updated>1572272540523</updated>
+      <workItem from="1572272544397" duration="4060000" />
+      <workItem from="1572280108549" duration="2467000" />
+      <workItem from="1572358092094" duration="2333000" />
+      <workItem from="1572363866368" duration="4741000" />
+      <workItem from="1572694534607" duration="1673000" />
+      <workItem from="1572709151616" duration="1219000" />
+      <workItem from="1572773335284" duration="5803000" />
+      <workItem from="1572781362179" duration="4079000" />
+      <workItem from="1572785484006" duration="41000" />
     </task>
     <servers />
   </component>
