@@ -4,9 +4,11 @@
 
 
 int main() {
-    char strA[100] = "11";
+    char strA[100] = "33";
     char strB[100] = "15";
-    int i = 0;
+    int i = 212;
+    intToStr(i,1,strA);
+    printf("efw: %s\n",strA);
     //char* s = longestSubstr(strA, strB, &i);
     //sucet(strA,strB);
     odpocet(strA,strB);

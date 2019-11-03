@@ -149,12 +149,27 @@ int* runningSum(int n, int data[n], int runningSum[n]){
         }
         *(runningSum+j) = suma;
     }
-    return *runningSum;
+    return*runningSum;
 }
 
 char* intToStr(int number, int n, char* dest){
-    *dest = number;
-    return dest;
+    char *start = dest;
+    int nn = 1000000;
+    int c=0;
+    while (nn > 1) {
+        nn /= 10;
+        if (number >= nn) {
+            c = 0;
+            while(number >= nn) {
+                c++;
+                number-=nn;
+            }
+            *dest = c+'0';
+            dest++;
+        }
+        
+    }
+    return start;
 }
 
 int* intToArray(int number, int n, int array[n]){
