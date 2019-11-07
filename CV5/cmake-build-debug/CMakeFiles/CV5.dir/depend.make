@@ -3,5 +3,6 @@
 
 CMakeFiles/CV5.dir/main.c.o: ../Bonus.h
 CMakeFiles/CV5.dir/main.c.o: ../CV5.h
+CMakeFiles/CV5.dir/main.c.o: ../Subor.h
 CMakeFiles/CV5.dir/main.c.o: ../main.c
 

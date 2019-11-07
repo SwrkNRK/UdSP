@@ -39,7 +39,7 @@ printf("%d\n",INT_MAX);
 void correctStr(char* str, int n, char patern){
 
     for (int j = 0; j < n; ++j) {
-        for (int i = strlen(str); i > -1; i--) {
+        for (int i = strlen(str); i > 0; i--) {
             *(str + i) = *(str + i - 1);
         }
         *str = patern;
@@ -56,6 +56,7 @@ void sucet(char* strA, char* strB){
     int pom = 0;
     int n = 0;
     for(int i = Alen; i > -1; i--){
+
         pom = *(strA+i)-'0';
         ss = ((*(strB+i)-'0') + (*(strA+i)-'0') + n);
         s=(ss%10)+'0';
@@ -65,6 +66,7 @@ void sucet(char* strA, char* strB){
         } else { n = 0;}
     }
     if(n == 1) {
+
         *(strA+Alen+2) = '\0';
         for(int i = Alen+1; i > 0; i--) {
             *(strA+i) = *(strA+i-1);
@@ -72,7 +74,7 @@ void sucet(char* strA, char* strB){
         *strA = n+'0';
     }
 
-printf("Vysledok po scitani: %s\n",strA);
+//printf("Vysledok po scitani: %s\n",strA);
 }
 
 void odpocet(char* strA, char* strB){
@@ -106,7 +108,7 @@ void odpocet(char* strA, char* strB){
         sA -= sB;
         *(strA)=sA+'0';
     }
-        printf("Vysledok po odpocte: %s\n",strA);
+       // printf("Vysledok po odpocte: %s\n",strA);
 }
 
 
@@ -157,41 +159,91 @@ void nasobenie(char* strA, char* strB) {
     printf("výsledok: %s\n",strA);
 }
 
+int isStrNUll(char* str){
+    for (int i = 0; i <strlen(str) ; ++i) {
+        if(*(str+i) != '0'){ return 0;}
+    }
+    return 1;
+}
+
 void delenie(char* strA, char* strB){
 
     char tmp[100]="1";
+    char tmp2[100]="1";
     char c = "546";
+    char t[10]="2";
+    char t2[10]="1";
 
-    while(c != '-'){
-        odpocet(strA,strB);
-        c=*strA;
-        sucet(tmp,"1");
+    while(1){
+        strcpy(tmp2,strA);
+        odpocet(tmp2,strB);
+        c=*tmp2;
+        sucet(tmp,t2);
+        if(c != '-'){odpocet(strA,strB);} else { break;}
+
     }
-    char t[2]="2";
-    odpocet(tmp,t);
 
+    odpocet(tmp,t);
+    printf("STRA: %s\n",tmp);
+    *(strA+strlen(strA))='0';
+    *(tmp+strlen(tmp))=',';
+
+    char tmp3[100]="1";
+    char tmp4[100]="2";
+
+    int cc = 0;
+    char tLast[100]="";
+    int index=0;
+    while(cc != 30){
+        strcpy(tmp3,strA);
+        odpocet(tmp3,strB);
+        c=*tmp3;
+        sucet(tmp4,t2);
+
+        if(c != '-'){odpocet(strA,strB); if(isStrNUll(strA)){ break;}}
+        if(c == '-'){
+            *(strA+strlen(strA))='0';
+            odpocet(tmp4,t);
+            *(tLast+index)=*(tmp4+1);
+            index++;
+            strcpy(tmp4,t2);
+
+        }
+        cc++;
+    }
+
+    printf("STRA2: %s\n",tLast);
+    for (int i = 0; i <strlen(tLast) ; ++i) {
+        *(tmp+strlen(tmp))=*(tLast+i);
+    }
 
     strcpy(strA,tmp);
     printf("Vysledok po deleni: %s\n",strA);
 }
 
-
-
-
+int longestSub(const char*strA, const char* strB, int pos, int* lenght, char* startPos){
+    int max = *lenght;                                // max = doterajšia nájdená max hodnota
+    int pocitadlo = 0;                                // pocitadlo pre zhodujúce sa písmená po sebe
+    for (int i = 0; i <strlen(strB) ; ++i) {          // cyklus prejde celé pole strB
+        if(*(strA+pos+pocitadlo) == *(strB+i)) {      // if true bude sa v ďalšom cykle hľadať zhoda v nasledujúcom písmene atd
+            pocitadlo++;                              // navýšenie počitadla pre posunutie sa k ďalšiemu písmenu
+            if(max < pocitadlo){ max = pocitadlo; *startPos = (strA-pocitadlo);} //
+        } else{pocitadlo=0;}
+        if(*(strA+pos+pocitadlo) == '\0') {break;}
+    }
+    if(max < pocitadlo){ *startPos = (strA-pocitadlo); return pocitadlo;}
+    return max;
+}
 
 const char* longestSubstr(const char*strA, const char* strB, int* length){
     int i = 0;
-
-    while(*strA != '\0') {
-        if(*strA == *strB){
-            i++;
-        } else {
-
-        }
+    char* position = strA;
+    while(*(strA+i) != '\0') {
+        *length = longestSub(strA,strB,i,length, position);
+        i++;
     }
-
-
-
+    if(*length == 0){ return NULL;}
+    return position;
 }
 
 

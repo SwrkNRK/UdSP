@@ -3,4 +3,4 @@ project(CV5 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(CV5 main.c CV5.h Bonus.h)
+add_executable(CV5 main.c CV5.h Bonus.h Subor.h)

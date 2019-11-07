@@ -167,7 +167,7 @@ char* intToStr(int number, int n, char* dest){
             *dest = c+'0';
             dest++;
         }
-        
+
     }
     return start;
 }
@@ -203,17 +203,18 @@ int* intToArray(int number, int n, int array[n]){
 }
 
 double gaussIntegral(double a, double b){
-    double delta = 0.0001;
-    int n = (b-a)/delta;
-    double sum = 0;
-    for (int i = 0; i < n; i++){
-        double x = a + i*delta;
-        double y = pow(M_E, -x * x);
-        sum += delta*y;
-    }
+#define COUNTT 1000
+#define M_E 2.7182818284590452354 /*e*/
 
+    double h = (b-a)/COUNTT;
+    double sum = 0;
+    for (int i = 0; i < COUNTT; i++) {
+        sum += pow(M_E, -(a+i*h)*(a+i*h)) * h;
+    }
     return sum;
 
+#undef COUNTT
+#undef M_E
 }
 
 

@@ -38,6 +38,12 @@ string.h
 time.h
 -
 
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/Subor.h
+stdio.h
+-
+stdlib.h
+-
+
 /cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/main.c
 stdio.h
 -
@@ -45,4 +51,6 @@ CV5.h
 /cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/CV5.h
 Bonus.h
 /cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/Bonus.h
+Subor.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/Subor.h
 

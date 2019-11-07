@@ -80,6 +80,9 @@
 		<Unit filename="/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/CV5.h">
 			<Option target="CV5"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/Subor.h">
+			<Option target="CV5"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/main.c">
 			<Option target="CV5"/>
 		</Unit>
