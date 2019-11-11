@@ -7,7 +7,7 @@ int main() {
     LIST list;
     list.booksCount=0;
     list.authorsCount=0;
-    FILE *subor = fopen("C:\\Users\\LK\\Desktop\\subor.txt","r");
+    FILE *subor = fopen("C:\\Users\\LK\\Desktop\\UdSP\\UdSP\\CV6\\subor.txt","r");
     importData(&list,subor);
     //printBookList(&list);
     DATE dateOd = {1,1,1800};
