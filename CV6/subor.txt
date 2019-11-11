@@ -1,0 +1,6 @@
+Traja musketieri;1980;Dumas;Alexander;1802/07/24
+Milujte kralovnu;1984;Hykisch;Anton;1932/02/23
+Grof Monte Christo;1981;Dumas;Alexander;1802/07/24
+Vojna a mier;1970;Tolstoj;Lev Nikolajevic;1828/09/09
+Anna Kareninova;1980;Tolstoj;Lev Nikolajevic;1828/09/09
+Peter a Lucia;1990;Rolland;Romain;1866/01/29
