@@ -43,6 +43,12 @@ stdio.h
 -
 stdlib.h
 -
+string.h
+-
+time.h
+-
+ctype.h
+-
 
 /cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV5/main.c
 stdio.h

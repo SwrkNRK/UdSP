@@ -137,7 +137,6 @@ char freqAnalyza(int n, char pole[n]){
         printf("\n");
     }
 
-
 }
 
 int* runningSum(int n, int data[n], int runningSum[n]){
