@@ -227,11 +227,11 @@ int longestSub(const char*strA, const char* strB, int pos, int* lenght, char* st
     for (int i = 0; i <strlen(strB) ; ++i) {          // cyklus prejde celé pole strB
         if(*(strA+pos+pocitadlo) == *(strB+i)) {      // if true bude sa v ďalšom cykle hľadať zhoda v nasledujúcom písmene atd
             pocitadlo++;                              // navýšenie počitadla pre posunutie sa k ďalšiemu písmenu
-            if(max < pocitadlo){ max = pocitadlo; *startPos = (strA-pocitadlo);} //
-        } else{pocitadlo=0;}
-        if(*(strA+pos+pocitadlo) == '\0') {break;}
+            if(max < pocitadlo){ max = pocitadlo; *startPos = (strA-pocitadlo);} //ak pocitadlo je viac ako max nastavenie nového max a zaznamenanie pozície písme do startPos
+        } else{pocitadlo=0;}                          // znulovanie pocitadla
+        if(*(strA+pos+pocitadlo) == '\0') {break;}    // zistenie či už nie sme na konci pola
     }
-    if(max < pocitadlo){ *startPos = (strA-pocitadlo); return pocitadlo;}
+    if(max < pocitadlo){ *startPos = (strA-pocitadlo); return pocitadlo;} // na konci cyklu opätovná kontrola maxima a pocitadla
     return max;
 }
 

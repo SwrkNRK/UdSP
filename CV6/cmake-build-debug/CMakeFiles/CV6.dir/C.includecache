@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV6/EvidFunctions.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+string.h
+-
+EvidStructs.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV6/EvidStructs.h
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV6/EvidStructs.h
+stdio.h
+-
+stdlib.h
+-
+
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV6/main.c
+stdio.h
+-
+EvidStructs.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV6/EvidStructs.h
+EvidFunctions.h
+/cygdrive/c/Users/LK/Desktop/UdSP/UdSP/CV6/EvidFunctions.h
+

@@ -6,7 +6,7 @@
 
 
 int main() {
-    /*
+    
     char strA[100] = "Hello kind my frands";
     char strB[100] = "lod my ran";
     int i = 0;
@@ -21,17 +21,18 @@ int main() {
     printf("\nFinish\n");
     //rodC();
 
-    */
+
+    /*
     FILE *src = fopen("C:\\Users\\LK\\Desktop\\UdSP\\UdSP\\CV5\\Source.txt","r+");
     //FILE *src2 = fopen(argv[1],"w");
-    /*
+
     if(src != NULL){
     //súbor existuje;
-    }*/
+    }
     FILE *dest = fopen("C:\\Users\\LK\\Desktop\\UdSP\\UdSP\\CV5\\Dest.txt", "w");
     char vyskyt[10] = "jur";
     char nahrad[10] = "robin";
-    nahradaRetazca(src, dest, vyskyt, nahrad);
+    nahradaRetazca(src, dest, vyskyt, nahrad); */
 
 
     //*******************************DU*********************************************
