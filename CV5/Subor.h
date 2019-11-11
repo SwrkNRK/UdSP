@@ -185,10 +185,12 @@ void odstranenieRiadku(FILE* src, FILE* dest, int riadok){
     }
 }
 
-void putToFile(FILE* dest, char* vyskyt, char* ttmp, int* pocitadlo) {
+void putToFile(FILE* dest, char* nnahrad, char* ttmp, int* pocitadlo) {
 
-
-
+    *(ttmp + (*pocitadlo)) = '\0';
+    fputs(nnahrad,dest);
+    strcpy(ttmp, "");
+    *pocitadlo = 0;
 
 }
 
@@ -205,18 +207,12 @@ void nahradaRetazca(FILE* src, FILE* dest, char* vyskyt, char* nahrad) {
             *(tmp + i) = (char) c;
             i++;
             if(i == size){
-                *(tmp + i) = '\0';
-                fputs(nahrad,dest);
-                strcpy(tmp, "");
-                i = 0;
+                putToFile(dest,nahrad,tmp,&i);
             }
 
         } else {
             if(i != 0) {
-                *(tmp + i) = '\0';
-                fputs(tmp,dest);
-                strcpy(tmp, "");
-                i = 0;
+                putToFile(dest,tmp,tmp,&i);
             } else {
                 if(c == EOF){ break;}
                 fputc(c, dest);
