@@ -45,6 +45,7 @@ AUTHOR* addAuthor(LIST* list, const AUTHOR* author){
     }
     return NULL;
 }
+
 bool addBook(LIST* list, const BOOK* book){
     for(int i = 0; i < list->booksCount; i++){
         if(areBooksEqual(book,&(list->books[i]))){

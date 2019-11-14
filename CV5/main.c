@@ -7,8 +7,8 @@
 
 int main() {
     
-    char strA[100] = "Hello kind my frands";
-    char strB[100] = "lod my ran";
+    char strA[100] = "Hello frands";
+    char strB[100] = "Heo fra";
     int i = 0;
     //printf("%d\n",copyFile("C:\\Users\\LK\\Desktop\\UdSP\\UdSP\\CV5\\Source.txt", "C:\\Users\\LK\\Desktop\\UdSP\\UdSP\\CV5\\Dest.txt"));
     char* s = longestSubstr(strA, strB, &i);

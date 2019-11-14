@@ -221,17 +221,17 @@ void delenie(char* strA, char* strB){
     printf("Vysledok po deleni: %s\n",strA);
 }
 
-int longestSub(const char*strA, const char* strB, int pos, int* lenght, char* startPos){
+int longestSub(const char*strA, const char* strB, int pos, int* lenght, char** startPos){
     int max = *lenght;                                // max = doterajšia nájdená max hodnota
     int pocitadlo = 0;                                // pocitadlo pre zhodujúce sa písmená po sebe
     for (int i = 0; i <strlen(strB) ; ++i) {          // cyklus prejde celé pole strB
         if(*(strA+pos+pocitadlo) == *(strB+i)) {      // if true bude sa v ďalšom cykle hľadať zhoda v nasledujúcom písmene atd
             pocitadlo++;                              // navýšenie počitadla pre posunutie sa k ďalšiemu písmenu
-            if(max < pocitadlo){ max = pocitadlo; *startPos = (strA-pocitadlo);} //ak pocitadlo je viac ako max nastavenie nového max a zaznamenanie pozície písme do startPos
+            if(max < pocitadlo){ max = pocitadlo; *startPos = (strA+pos);} //ak pocitadlo je viac ako max nastavenie nového max a zaznamenanie pozície písme do startPos
         } else{pocitadlo=0;}                          // znulovanie pocitadla
         if(*(strA+pos+pocitadlo) == '\0') {break;}    // zistenie či už nie sme na konci pola
     }
-    if(max < pocitadlo){ *startPos = (strA-pocitadlo); return pocitadlo;} // na konci cyklu opätovná kontrola maxima a pocitadla
+    if(max < pocitadlo){ *startPos = (strA+pos); return pocitadlo;} // na konci cyklu opätovná kontrola maxima a pocitadla
     return max;
 }
 
@@ -239,7 +239,7 @@ const char* longestSubstr(const char*strA, const char* strB, int* length){
     int i = 0;
     char* position = strA;
     while(*(strA+i) != '\0') {
-        *length = longestSub(strA,strB,i,length, position);
+        *length = longestSub(strA,strB,i,length, &position);
         i++;
     }
     if(*length == 0){ return NULL;}
